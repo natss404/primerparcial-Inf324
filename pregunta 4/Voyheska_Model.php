@@ -34,25 +34,5 @@ class Voyheska_Model extends CI_Model {
 		return $this->db->query("UPDATE docente set sigla={$sigla} where ci={$ci}");
 		
 	}
-		
-	
-	public function obtenerEnlace($ci){
-	    $this->load->database();
-		$this->db->where('ci'. $ci);
-		$query= $this->db->get('docente');
-		if($query->num_rows() > 0){
-			return $query;
-		}
-		else {
-			return FALSE;
-		}
-	}
-	
-
-	public function editarEnlace($ci, $data){
-		   $this->load->database();
-		 $this->db->where('ci', $ci);
-		 $this->db->update('docente', $data);
-	 }
 
 }
