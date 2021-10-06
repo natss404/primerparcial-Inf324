@@ -9,6 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 body {
 	background: #fafafa url(https://media.istockphoto.com/vectors/vibrant-colorfull-background-vector-id1166323937?k=20&m=1166323937&s=612x612&w=0&h=zco09J7zIb4gdMhooILE7HF6siewO64Gi_EWKidI5Yo=) ;
+	
 	color: #444;
 	margin: 40px;
 	text-shadow: 0 1px 0 #fff;
@@ -175,6 +176,7 @@ tbody:hover tr:hover td {
 		echo "<th>".$doc->sigla.'</th>';
 		
 		echo "<th>";
+		echo "<a href='Lectura2/editar/".$doc->ci."'> Editar — </a>";
 	echo "<a href='Lectura2/eliminar/".$doc->ci."'> Eliminar </a>";
 	echo "</th>";
 		}
